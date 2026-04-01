@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean class="com.pune.city.employee" id="t1">
+   <property name="eid" value="101"></property>
+    <property name="ename" value="Mayuri"></property>
+     <property name="eemail" value="Mayuri@email.com"></property>
+      <property name="epass" value="mayuri@123"></property>
+       <property name="a1" ref="t2"></property>
+   
+   </bean>
+   
+   <bean class="com.pune.city.Address" id="t2">
+   <property name="name" value="pune"></property>
+   <property name="location" value="pimpari"></property>
+   <property name="pincode" value="400018"></property>
+   </bean>
+
+</beans>
